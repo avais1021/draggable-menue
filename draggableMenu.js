@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded' , function(){
  // Select the element and add touch events
 
  if (storeBox) {
-    debugger
      storeBox.addEventListener('touchstart', onDragStart);
      storeBox.addEventListener('touchmove', onDragMove);
  }

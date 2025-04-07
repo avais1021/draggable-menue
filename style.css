@@ -1,3 +1,11 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    width: 100%;
+    height: 100vh;
+    background: darkcyan;
+    background: linear-gradient(45deg, black, #0003479e);
+}
+
 .find_store__container {
     max-width: 1280px;
     width: 100%;
@@ -95,8 +103,8 @@
 
 .tabs_box .tab.active {
     font-weight: 700;
-    background: #F1EDF8B2;
-    border: 1px solid #7345B2;
+    background: #ebebebb2;
+    border: 1px solid #FFC107;
 }
 
 .tabs_box .tab.active:hover {
@@ -125,6 +133,7 @@
     flex-direction: column;
     max-width: 413px;
     width: 100%;
+    box-shadow: 1px 1px 1px steelblue
 }
 
 .card-image {
@@ -206,7 +215,7 @@
     line-height: 29px;
     letter-spacing: -1.1%;
     text-align: center;
-    color: #7446B3;
+    color: #FFC107  ;
 }
 
 .store-link:hover {
@@ -218,14 +227,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #7345B2;
+    color: #000000;
     border-radius: 30px;
     font-family: Lato;
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
     padding: 0 41px;
-    border: 1px solid #7345B2;
+    border: 1px solid #259ae4;
     cursor: pointer;
     background: none;
     margin: 0 auto;
@@ -262,13 +271,19 @@
         padding-top: 11px;
         position: fixed;
         width: 100%;
-        max-height: 470px;
+        max-height: 526px;
         /* overflow: auto; */
         left: 0;
-        bottom: -265px;
-        transform: translateY(0);
+        /* bottom: -265px; */
+        bottom: -301px;
+        transform: translateY(17px);
         z-index: 999999;
         /* border-top: 1px solid greenyellow; */
+        border-radius: 15px;
+        border-radius: 6px 6px 0 0;
+    }
+    .store_box.add_overflow{
+        overflow: auto;
     }
     /* transform: translateY(-265px); from js  */
 
@@ -291,7 +306,7 @@
 
     .tabs_box .tab {
         padding: 0 13px;
-        border-radius: 6px;
+        border-radius: 42px;
     }
 
     .store_box__cards .find_store__container {
@@ -319,7 +334,6 @@
     .card-content {
         background: none;
         padding: 0px 16px 25px 16px;
-        border-bottom: 1px solid #E2E2E2;
         min-height: unset;
     }
     .store-title-wrapper{
@@ -367,7 +381,7 @@
         align-items: center;
         gap: 7px;
         font-size: 16px;
-        color: #6b3fc2; /* Purple color */
+        color:black; /* Purple color */
         cursor: pointer;
         font-family: Lato;
         font-weight: 400;
@@ -386,8 +400,8 @@
         height: 13px;
     }
     .store_box__cards .call_btn img{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
     .drag-handle {
         width: 39px;
