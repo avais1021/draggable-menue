@@ -1,0 +1,401 @@
+.find_store__container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.store_box{
+    padding-top: 60px;
+    background : #FFFFFF;
+    transition:  transform 0.3s;
+}
+
+/* store_box__result----------------------------------------------   */
+.store_box__result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.search-results {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #000000;
+}
+
+.view-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-options .grid-view, .view-options .map-view {
+    padding-bottom: 14px;
+    width: 41px;
+    cursor: pointer;
+}
+
+.view-options .grid-view img {
+    width: 19px;
+    height: 19px;
+    margin: 0 auto;
+}
+
+.view-options .map-view img {
+    width: 21px;
+    height: 19px;
+    margin: 0 auto;
+}
+
+.view-options .active {
+    border-bottom: 2px solid orange;
+}
+
+/* tabs_box css ---------------------------------------------------- */
+.tabs_box__wrapper {
+    margin-bottom: 44px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.tabs_box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tabs_box:nth-last-child(1) {
+    margin-bottom: unset;
+}
+
+.tabs_box .tab {
+    padding: 0 13px;
+    min-height: 48px;
+    border: 1px solid #CCCCCC99;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #1D1D1F;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs_box .tab:hover {
+    border: 1px solid #7345B2;
+    color: #7345B2;
+}
+
+.tabs_box .tab.active {
+    font-weight: 700;
+    background: #F1EDF8B2;
+    border: 1px solid #7345B2;
+}
+
+.tabs_box .tab.active:hover {
+    color: #1D1D1F;
+}
+
+/* store cards css --------------------------------------------  */
+.store_box__cards_row {
+    margin-bottom: 40px;
+}
+.store_box__cards{
+    margin-bottom: 90px;
+}
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 413px;
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px 20px 20px 20px;
+    background: #F5F4EF;
+    min-height: 270px;
+}
+
+.store-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.store-title {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    color: #000000;
+    max-width: 269px;
+    width: 100%;
+
+}
+
+.icon-group {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-button {
+    border: none;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.store-address {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.store-info {
+    display: flex;
+    gap: 30px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    color: #767676;
+    margin-bottom: 2px;
+}
+
+.services {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.store-link {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -1.1%;
+    text-align: center;
+    color: #7446B3;
+}
+
+.store-link:hover {
+    text-decoration: none;
+}
+
+.store_box__loadmore {
+    min-height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7345B2;
+    border-radius: 30px;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    padding: 0 41px;
+    border: 1px solid #7345B2;
+    cursor: pointer;
+    background: none;
+    margin: 0 auto;
+}
+.store_box__cards .action-buttons {
+    display: none;
+}
+
+/* map_view --  */
+
+/* Width & height */
+/* Handle (the draggable part) */
+  
+  /* Track (background of scrollbar) */
+  
+  
+  /* Handle on hover */
+  /* .store_box__cards.map_view .card-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } */
+.drag-handle {
+    display: none;
+}
+.dsp-none {
+    display: none;
+  }
+
+@media screen and (max-width : 768px) {
+    .find_store__container {
+        padding: 0 16px;
+    }
+
+    .store_box{
+        padding-top: 11px;
+        position: fixed;
+        width: 100%;
+        max-height: 470px;
+        /* overflow: auto; */
+        left: 0;
+        bottom: -265px;
+        transform: translateY(0);
+        z-index: 999999;
+        /* border-top: 1px solid greenyellow; */
+    }
+    /* transform: translateY(-265px); from js  */
+
+    .tabs_box__wrapper .find_store__container {
+        padding-right: unset;
+    }
+
+    .search-results {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .store_box__result {
+        margin-bottom: 23px;
+    }
+
+    .view-options {
+        display: none;
+    }
+
+    .tabs_box .tab {
+        padding: 0 13px;
+        border-radius: 6px;
+    }
+
+    .store_box__cards .find_store__container {
+        padding: 0;
+    }
+
+    .tabs_box__wrapper {
+        margin-bottom: 30px;
+    }
+
+    .tabs_box {
+        margin-bottom: 10px;
+    }
+    .store_box__cards{
+        margin-bottom: 40px;
+    }
+    .card-image {
+        display: none;
+    }
+
+    .icon-group {
+        display: none;
+    }
+
+    .card-content {
+        background: none;
+        padding: 0px 16px 25px 16px;
+        border-bottom: 1px solid #E2E2E2;
+        min-height: unset;
+    }
+    .store-title-wrapper{
+        margin-bottom: 13px;
+    }
+    .store-title {
+        max-width: 260px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .store-address {
+        font-size: 14px;
+        line-height: 21px;
+        color: #545454;
+        margin-bottom: 20px;
+    }
+    .store-info .mob-number{
+        display: none;
+    }   
+    .store-info{
+        font-size: 13px;
+        line-height: 9px;
+        color: #545454;
+        margin-bottom: 18px;
+        gap: unset;
+    }
+    .services {
+        font-size: 12px;
+        line-height: 9px;
+        margin-bottom: 19px;
+    }
+    .store_box__loadmore{
+        padding: 0 39px;
+    }
+    .store_box__cards .action-buttons {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 16px;
+        gap: 59px;
+        }
+    
+    .store_box__cards .action {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 16px;
+        color: #6b3fc2; /* Purple color */
+        cursor: pointer;
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.8px;        
+        /* max-width: 314px; */
+        /* width: 100%; */
+        width: fit-content;
+    }
+    .store_box__cards .direction_btn img{
+        width: 17px;
+        height: 17px;
+    }
+    .store_box__cards .share_btn img{
+        width: 12px;
+        height: 13px;
+    }
+    .store_box__cards .call_btn img{
+        width: 15px;
+        height: 15px;
+    }
+    .drag-handle {
+        width: 39px;
+        height: 4px;
+        background-color: #D9D9D9;
+        border-radius: 40px;
+        margin: 0 auto 19px auto;
+        cursor: grab;
+        display: block;
+    }
+}
