@@ -284,7 +284,8 @@ body{
         width: 100%;
         height: 202px;
         left: 0;
-        transform: translateY(465px);
+        bottom: 0;
+        /* transform: translateY(0px); */
         z-index: 999999;
         border-radius: 15px;
         border-radius: 6px 6px 0 0;

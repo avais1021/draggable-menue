@@ -20,23 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         if (storeBoxHeight > 202) {
-            e.currentTarget.style.height = `${storeBoxHeight}px`
-            e.currentTarget.classList.add('add_overflow')
+            e.currentTarget.closest('.store_box').style.height = `${storeBoxHeight}px`
+            e.currentTarget.closest('.store_box').classList.add('add_overflow')
         }else{
-            e.currentTarget.classList.remove('add_overflow');
+            e.currentTarget.closest('.store_box').classList.remove('add_overflow');
         }
         if(storeBoxHeight > 576){
-            e.currentTarget.style.height = `${576}px`;
+            e.currentTarget.closest('.store_box').style.height = `${576}px`;
         }
         if (storeBoxHeight < 202) {
-            e.currentTarget.style.height = `${202}px`;
+            e.currentTarget.closest('.store_box').style.height = `${202}px`;
         }
 
     }
 
 
     if (storeBox) {
-        storeBox.addEventListener('touchmove', onDragMove);
+        dragHandle.addEventListener('touchmove', onDragMove);
     }
 
 
