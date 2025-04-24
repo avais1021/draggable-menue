@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-
+    
     // bottom sheet  draggable menu ---------------------------------------
 
     const storeBox = document.querySelector('.find_store .store_box');
-    const dragHandle = document.querySelector('.find-store .drag-handle');
+    const dragHandle = document.querySelector('.find_store .drag-handle');
 
     let currentY = 0;
     let storeBoxHeight = 202;
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function onDragMove(e) {
         e.preventDefault(); // Prevent scrolling issues
         currentY = e.touches[0].pageY;
-
+        console.log(Math.random(),'Math.random()');
         console.log(currentY, 'currentY');
 
         storeBoxHeight = window.innerHeight - currentY;
