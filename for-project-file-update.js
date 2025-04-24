@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // bottom sheet  draggable menu ---------------------------------------
 
     const storeBox = document.querySelector('.find_store .store_box');
+    const dragHandle = document.querySelector('.find-store .drag-handle');
 
     let currentY = 0;
     let storeBoxHeight = 202;
