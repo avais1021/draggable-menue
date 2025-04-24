@@ -414,10 +414,23 @@ body{
     .drag-handle {
         width: 60px;
         height: 20px;
-        background-color: #D9D9D9;
-        border-radius: 40px;
+        /* background-color: #D9D9D9;
+        border-radius: 40px; */
         margin: 0 auto 19px auto;
         cursor: grab;
         display: block;
+        position: relative;
+    }
+    .drag-handle::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 39px;
+        height: 4px;
+        background-color: #D9D9D9;
+        border-radius: 40px;
+
     }
 }
