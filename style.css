@@ -279,7 +279,7 @@ body{
         border-radius: 6px 6px 0 0;
     } */
     .store_box{
-        padding-top: 11px;
+        padding-top: unset;
         position: fixed;
         width: 100%;
         height: 202px;
@@ -413,7 +413,7 @@ body{
     }
     .drag-handle {
         width: 60px;
-        height: 20px;
+        height: 31px;
         margin: 0 auto 0 auto;
         cursor: grab;
         display: block;
@@ -422,7 +422,7 @@ body{
     .drag-handle::after{
         content: '';
         position: absolute;
-        top: 0;
+        top: 11px;
         left: 50%;
         transform: translate(-50%);
         width: 39px;
