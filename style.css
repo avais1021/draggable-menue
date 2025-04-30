@@ -290,7 +290,7 @@ body{
         border-radius: 15px;
         border-radius: 6px 6px 0 0;
     }
-    .store_box.add_overflow{
+    .store_box .add_overflow{
         overflow: auto;
     }
     /* transform: translateY(-265px); from js  */
